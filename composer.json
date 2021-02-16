@@ -15,4 +15,8 @@
             "xenonmc\\MySQLi_QueryBuilder\\": "src/"
         }
     }
+    "require": {
+    
+    
+}
 }
