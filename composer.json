@@ -12,7 +12,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "xenonmc\\Template\\": "src/"
+            "xenonmc\\MySQLi_QueryBuilder\\": "src/"
         }
     }
 }
