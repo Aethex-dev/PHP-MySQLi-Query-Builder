@@ -14,7 +14,7 @@
         "psr-4": {
             "xenonmc\\MySQLi_QueryBuilder\\": "src/"
         }
-    }
+    },
     "require": {
     
     
