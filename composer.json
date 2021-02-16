@@ -1,21 +1,51 @@
 {
-    "name": "xenonmc/php-mysqli-query-builder",
-    "type": "library",
-    "description": " ",
-    "license": "MIT",
-    "minimum-stability": "dev", 
+    "name": "xenframe/mysqli-query-builder",
+    "type": "project",
+    "description": "A PHP package template.",
+    "keywords": ["php", "composer", "package"],
     "authors": [
         {
-            "name": "XENONMC",
-            "email": "support@xenonmc.xyz"
+            "name": "Thavarshan Thayananthajothy",
+            "email": "tjthavarshan@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {
-        "php": ">=8.0.0"
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.4.2",
+        "phpunit/phpunit": "^9.4",
+        "friendsofphp/php-cs-fixer": "^2.16.3",
+        "phpstan/phpstan": "^0.12.48",
+        "symfony/var-dumper": "^5.2.1"
     },
     "autoload": {
         "psr-4": {
-            "xenframe\\php_mysqli_query_builder\\": "src/"
+            "Base\\": "src/Base"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Base\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "scripts": {
+        "lint": "php-cs-fixer fix -v",
+        "test:lint": "php-cs-fixer fix -v --dry-run",
+        "test:types": "phpstan analyse --ansi --memory-limit=0",
+        "test:unit": "vendor/bin/phpunit --colors=always",
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:unit"
+        ]
     }
 }
