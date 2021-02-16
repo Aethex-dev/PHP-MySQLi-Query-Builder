@@ -9,7 +9,6 @@
             "email": "support@xenonmc.xyz"
         }
     ],
-    "type": "project",
     "autoload": {
         "psr-4": {
             "xenonmc\\MySQLi_QueryBuilder\\": "src/"
