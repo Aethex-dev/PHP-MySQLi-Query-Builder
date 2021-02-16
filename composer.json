@@ -1,13 +1,17 @@
 {
-    "name": "xenonmc/php-mysqli-query-builder",
+    "name": "xenonmc/php-mysqli-query-builde",
+    "description": "",
     "type": "library",
-    "description": "Your package description goes here",
-    "keywords": ["relevant","tags","go","here"],
     "license": "MIT",
     "authors": [
         {
-            "name": "XENNMC",
+            "name": "XENONC",
             "email": "support@xenonmc.xyz"
         }
-    ]
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"xenonmc\\php-mysqli-quey-builder\\": "src/"}
+    },
+    "require": {}
 }
