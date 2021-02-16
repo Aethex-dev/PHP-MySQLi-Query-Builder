@@ -1,1 +1,3 @@
-// not done
+<?php
+
+namespace xenonmc\MySQLi_QueryBuilder
