@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "xenframe\\php_mysqli_query_builder\\": "src/",
+            "xenframe\\php_mysqli_query_builder\\": "src/"
         }
     }
 }
